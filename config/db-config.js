@@ -15,7 +15,7 @@ const connectDB = function () {
         }
       })
       .catch((err) => {
-        reject(err);
+        reject(err.message);
       });
   });
 };

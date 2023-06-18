@@ -23,7 +23,7 @@ if (NODE_ENV === "DEVELOPMENT") {
       `HTTP SERVER STARTED ON PORT ${HTTP_PORT}\nON ${NODE_ENV} SERVER`.bgGreen
         .bold
     );
-    console.log(`SSL ENABLED : FALSE`);
+    console.log(`SSL ENABLED : FALSE`.bgRed.bold);
   });
 } else if (NODE_ENV === "PRODUCTION") {
   //ENABLING SSL IN PRODUCTION READY SYSTEM
@@ -42,7 +42,7 @@ if (NODE_ENV === "DEVELOPMENT") {
       `HTTPS SERVER STARTED ON PORT ${HTTPS_PORT}\nON ${NODE_ENV} SERVER`
         .bgGreen.bold
     );
-    console.log(`SSL ENABLED : TRUE`.bgGreen.bold);
+    console.log(`SSL ENABLED : TRUE`.bgBlue.bold);
   });
 }
 
